@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>奕秋的个人博客</title>
+    <!-- 网页标题图标 -->
+    <link rel="icon" href="./photo/ying.svg " type="images/x-icon">
+    <!-- 导入全局样式 -->
+    <link rel="stylesheet" href="./css/index.css">
+    <!-- 时钟 -->
+    <script src="./time.js"></script>
+
+</head>
+
+<body>
+<!--
+     <div class="blank">
+        <a href="#top"><img src="./images/上箭头 (1).svg" alt="" title="点击回到顶部"></a>
+    </div> 
+-->
+    <div class="top">
+        <div class="big-box">
+            <img src="./photo/touxing.jpg"
+                alt="">
+            <div class="h-1">学牲</div>
+            <div class="h-2">全栈学习</div>
+            <div class="h-3">摆大烂</div>
+            <div class="a1"></div>
+            <div class="a2"></div>
+            <div class="a3"></div>
+            <div class="a4"></div>
+        </div>
+        <ul class="list">
+            <li><a href="./code.html">Code</a></li>
+            <!-- <li><a href="#gyw">About Me</a></li> -->
+            <li><a href="#hobby">My hobby</a></li>
+            <!-- 点击图片添加背景音乐 -->
+            <li class="logo"><img src="./photo/music.svg" onClick="play()" alt="user" title="点击图片 开始/暂停 音乐(有延迟)"> </li>
+            <li><a href="#jsz">Technology Stack</a></li>
+            <!-- <li><a href="#wdfx">Share</a></li> -->
+            <li><a href="#lyq">Join us</a></li>
+        </ul>
+        <!-- <div class=" top-nav-down">
+            <a href="#two" title="点击继续查看">
+                <p></p>
+            </a>
+        </div> -->
+
+    </div>
+    <header class="first" id="two">
+        <!-- 添加背景音乐 -->
+        <audio id="music" src="./HyuN - Infinity Heaven.mp3" loop autoplay></audio>
+        <script>
+            window.onload = function(){ 
+                 var audio = document.getElementById('music');
+                     audio.pause();//打开页面时无音乐
+            }
+            function play() {
+                var audio = document.getElementById('music');
+                if (audio.paused) {
+                    audio.play();
+                    document.getElementById('musicImg').src="./photo/music.svg";
+                }else{
+                    audio.pause();
+                    audio.currentTime = 0;//音乐从头播放
+                    document.getElementById('musicImg').src="./photo/music.svg";
+                }
+            }
+            </script>
+        <!-- header头部区域end -->
+
+        <div class="box">
+            <!-- 计时器 -->
+            <div class="time">
+                <p>时钟</p>
+                <p class="time-text">请珍惜美好的时间</p>
+                <span id="demo"> </span>
+                <p class="p-text">袅袅茶香，一曲轻歌烂漫，一曲月色未央，
+                    时光若水，暗香浮动，细品人生的味道，苦涩，甘甜，入醉。
+                    闲看庭前花开花落，漫随天外云卷云舒，将一切美好安放在心里，
+                    以一抹灿然的微笑，在岁月里行走，滋润生命的漫漫旅程。</p>
+            </div>
+            <!-- banner轮播图区域 -->
+            <div class="swiper">
+
+                <input type="radio" name="btn" id="btn1" />
+                <input type="radio" name="btn" id="btn2" />
+                <input type="radio" name="btn" id="btn3" />
+                <input type="radio" name="btn" id="btn4" />
+                <input type="radio" name="btn" id="btn5" />
+                <input type="radio" name="btn" id="btn6" />
+                <input type="radio" name="btn" id="btn7" />
+                <input type="radio" name="btn" id="btn8" />
+                <input type="radio" name="btn" id="btn9" />
+                <input type="radio" name="btn" id="btn10" />
+                <input type="radio" name="btn" id="btn12" />
+                <input type="radio" name="btn" id="btn13" checked />
+                <input type="radio" name="btn" id="btn14" />
+                <label for="btn1"></label>
+                <label for="btn2"></label>
+                <label for="btn3"></label>
+                <label for="btn4"></label>
+                <label for="btn5"></label>
+                <label for="btn6"></label>
+                <label for="btn7"></label>
+                <label for="btn8"></label>
+                <label for="btn9"></label>
+                <label for="btn10"></label>
+                <label for="btn12"></label>
+                <label for="btn13"></label>
+                <label for="btn14"></label>
+
+                <ul class="banner">
+                    <li><img src="./photo/001.webp" alt="" /></li>
+                    <li><img src="./photo/002.webp" alt="" /></li>
+                    <li><img src="./photo/003.webp" alt="" /></li>
+                    <li><img src="./photo/004.webp" alt="" /></li>
+                    <li><img src="./photo/005.jpg" alt="" /></li>
+                    <li><img src="./photo/006.jpg" alt="" /></li>
+                    <li><img src="./photo/gyw-1.png" alt="" /></li>
+                    <li><img src="./photo/008.jpeg" alt="" /></li>
+                    <li><img src="./photo/009.png" alt="" /></li>
+                    <li><img src="./photo/010.png" alt="" /></li>
+                    <li><img src="./photo/012.png" alt="" /></li>
+                    <li><img src="./photo/013.jpg" alt="" /></li>
+                    <li><img src="./photo/014.png" alt="" /></li>
+                </ul>
+            </div>
+            <!-- banner结束 -->
+
+
+            <!-- 盒子右边start -->
+            <div class="box-right">
+                <div class="box-right-logo">
+                    <img src="./photo/touxing.jpg" alt="">
+                </div>
+                <h3>奕秋</h3>
+                <p>I always be with you jiluan</p>
+                <hr>
+                <h2>个人标签</h2>
+                <ul class="lb">
+
+                    <li>C+++++++++++</li>
+                    <li>Javavavavavava</li>
+                    <li>pyyyyyyyyyyy</li>
+                    <li>算法</li>
+                    <li>前端开发</li>
+                    <li>天马行空想象力</li>
+                    <li>漫画绘画迷</li>
+                    <li>中华小乐库</li>
+                    <li>话痨患者</li>
+                </ul>
+            </div>
+        </div>
+        <!-- <div class="hd-footer">
+            <ul class="list-box">
+                <li>
+                    <img src="./images/3.jpg" alt="">
+                    <span> 你指尖跳动的电光，是我永恒不变的信仰
+                    </span><br><br>
+                    <p>2021年08月03日 00:39</p>
+                    <i class="icon-1"><a href="##" alert="点赞成功"><img src="./images/点赞.svg" alt=""></a></i>
+                </li>
+                <li>
+                    <img src="./images/2.jpg" alt="">
+                    <span> 错的不是我,是整个世界(雾)
+                    </span>
+                    <br><br>
+                    <p>2021年08月03日 00:34</p>
+                    <i class="icon-1"><a href="##"><img src="./images/点赞.svg" alt=""></a></i>
+                </li>
+                <li>
+                    <img src="./images/4.jpg" alt="">
+                    <span> 莫愁前路无知己，天下谁人不识君。
+                    </span><br><br>
+                    <p>2021年08月03日 00:32</p>
+                    <i class="icon-1"><a href="##"><img src="./images/点赞.svg" alt=""></a></i>
+                </li>
+                <li>
+                    <img src="/images/1.jpg" alt="">
+                    <span> 仰天大笑出门去，我辈岂是蓬莱人。
+                    </span><br><br>
+                    <p>2021年08月03日 00:31</p>
+                    <i class="icon-1"><a href="##"><img src="./images/点赞.svg" alt=""></a></i>
+
+                </li>
+            </ul>
+        </div> -->
+        <!-- <div class=" hd-footer-end">
+            <a href="#gyw" title="点击继续查看">
+                <p></p>
+            </a> 
+        </div>-->
+    </header>
+    <!-- 首页end -->
+    <!-- 关于我start -->
+    <!-- <div id="gyw">
+
+        <div class="content">
+            <h1>Hi!</h1>
+            <h2>我是奕秋</h2>
+            <h3>所谓有朋自远方来，不亦乐乎</h3>
+            <h4>进来的请一定要耐心收看完这段文字哦！(๑′ᴗ‵๑)Ｉ Lᵒᵛᵉᵧₒᵤ❤</h4>
+            <h5>容我自我介绍一番，我，00后，一个热爱前端的在校大学生</h5>
+            <h6>第一次接触前端实在大一，到现在已经差不过两年，中间一路坎坷，实际上也就学了几个月</h6>
+            <p>坚持是对自己说过最多的话</p>
+            <p>热衷于玄幻小说的中二青年</p>
+            <p>梦想是玄幻世界游历一番</p>
+            <p>如果消灭bug是一个痛苦的过程，那么学习一定是一个享受的过程</p>
+            <p>要学会享受这个学习的过程</p>
+            <p>幸运的是，自己还好是个乐天派，拥有积极的心态，心态对一个人作用真的是!important</p>
+            <p>希望各位还在坚持的朋友也能保持乐观下去，积极面对明天</p>
+            <p>祝还在拼搏的各位，不仅能消灭代码中的bug，还能轻易消灭生活的bug，愉悦每一天</p>
+            <p>话就说到这了，各位大佬继续往下看吧</p>
+            <p>(＊＾▽＾＊)o♪</p>
+        </div>
+        <div class="gyw-footer">
+            <ul class="gyw-img">
+                <li><img src="./images/gyw-1.png" alt=""></li>
+                <li><img src="./images/gyw-2.jpg" alt=""></li>
+                <li><img src="./images/gyw-4.jpeg" alt=""></li>
+                <li><img src="./images/gyw-5.png" alt=""></li>
+            </ul>
+        </div>
+    </div> -->
+    <!-- 关于我end -->
+    <!-- 个人爱好start -->
+    <div id="hobby">
+        <div class="box1">
+            <!-- 上半部分盒子 -->
+            <div class="box-top1">
+                <div class="top-left">
+                    <span></span>
+                    <i> <img src="https://img1.baidu.com/it/u=3819643902,1000613763&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=500"
+                            alt=""></i>
+                    <hr>
+                    <h1>动漫迷</h1>
+
+                </div>
+                <div class="content">
+                    <h2>不算资深的动漫迷</h2>
+                    <p>不知什么时候开始迷上动漫了，也许是这些东西能引起我的共鸣吧...
+                        入坑作是未闻花名当时就泪目了 再慢慢的熟悉了小电视 知道了某科学的超电磁炮(你指尖跳动的电光，是我永恒不变的信仰!!!)
+                        还有紫罗兰永恒花园,进击的巨人,东京喰種.....
+                    </p>
+                </div>
+            </div>
+            <div class="box-top2">
+                <div class="top-right">
+                    <i>
+                        <img src="https://img0.baidu.com/it/u=2231560743,3773165976&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=500" alt=""></i>
+                    <hr>
+                    <h1>音游</h1>
+                </div>
+                <div class="content">
+                    <h2>阴游人</h2>
+                    <p> 
+                        入坑的其实算phigros 之前还玩过demo(古树) 
+                        初二元旦的时候朋友安利我了phigros 打了一首14级的(精选集里免费的) 
+                        当时就被铺面吓住了当时好像是F 之后我下载了phi 一直越级打歌 
+                        不过现在rks也到了14.00 除了这两款我还接触了arc 喵斯快跑 音乐世界2 Malaoy
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- 下半部分盒子 -->
+        
+        <!-- <div class="box2"> 
+            <div class="box-bottom1">
+                <div class="box-bottom-left">
+                    <span></span>
+                    <i><img src="https://img0.baidu.com/it/u=2231560743,3773165976&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=500"
+                            alt=""></i>
+                    <hr>
+                    <h1>音游</h1>
+
+                </div>
+                    <h2>阴游人</h2>
+                    <p>
+                        你们应该都发现了这背景音乐是phigros的魔王曲Rrhar'il 入坑的其实算phigros 之前还玩过demo(古树) 初二元旦的时候朋友安利我了phigros 打了一首14级的(精选集里免费的) 当时就被铺面吓住了当时好像是F 之后我下载了phi 一直越级打歌 不过现在rks也到了14.00 除了这两款音游我还玩arc 喵斯快跑 音乐世界2 Malaoy
+                    </p>
+                </div>
+            </div>
+            <div class="box-bottom2">
+                <div class="box-bottom-right">
+                    <span></span>
+                    <i><img src="https://img2.baidu.com/it/u=3289124024,3755421575&fm=253&fmt=auto&app=120&f=JPEG?w=500&h=500"
+                            alt=""></i>
+                    <hr>
+                    <h1>大爱小说</h1>
+
+                </div>
+                <div class="content">
+                    <h2>玄幻老书虫</h2>
+                    <p>真的，就小说这方面，比之其他都要喜欢的多，当年熬夜看小说看得心潮澎湃，那日子别提多爽，比较喜欢看玄幻小说，各种重生流，系统流什么的全部都看过，漫画也是同样吧，看得非常多，小说电影这些真的是差不多没有没看过的了，看且不仅于玄幻，悬疑，故事会，什么都看除了耽美
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- /* 爱好hobby  结束end */ -->
+    <!-- 技术栈start -->
+    <div id="jsz">
+
+        <ol class="card-list">
+            <li>
+                <img src="./photo/jsz-1.jpg" alt="">
+                <div class="up-1">
+                    <h1>C++</h1>
+                </div>
+            </li>
+            <li><img src="./photo/jsz-2.jpeg" alt="">
+                <div class="up-1">
+                    <h1>Math</h1>
+                </div>
+            </li>
+            <li><img src="./photo/jsz-3.jpeg" alt="">
+                <div class="up-1">
+                    <h1>前端开发</h1>
+                </div>
+            </li>
+            <li><img src="./photo/jsz-4.jpg" alt="">
+                <div class="up-1">
+                    <h1>算法</h1>
+                </div>
+            </li>
+            </0l>
+            <div class="lxt"> 
+                <a href="https://objtube.gitee.io/front-end-roadmap/#/" >
+                    <h1 title="点击查看前端学习路线">»»前端学习路线图</h1>
+                </a>
+                <a href="https://docs.qq.com/mind/DT3dQRmZTZk14U0l0?u=3ff5aa6ec6e24f7485cfae3f8dbffd88">
+                    <h1 title="点击查看后端学习路线">»»后端学习路线图</h1>
+                </a>
+                <a href="https://docs.qq.com/mind/DU01SVGpab2tWdlNj?u=3ff5aa6ec6e24f7485cfae3f8dbffd88">
+                    <h1 title="点击查看算法学习路线">»»算法学习路线图</h1>
+                </a>
+            </div>
+
+    </div>
+
+    <!-- 留言 -->
+    <footer class="ly" id="lyq">
+        <h1>进群van</h1>
+        <h1>我这个群还蛮大的</h1>
+        <div style="height: 900px;margin-top: 50px;">531362082</div>
+        <!-- <div class="fc-1"><img src="./images/Windmill，风车，风力.svg" alt=""></div>
+        <div class="icon">
+            <a href="https://space.bilibili.com/473361091"><img src="./images/BILIBILI_LOGO.svg" alt="" title="点击打开我的B站主页"></a>
+            <img src="./images/githup.svg" alt=""title="个人GitHub">
+           
+            <img src="./images/微博.svg" alt=""title="个人GitHub">
+            <img src="./images/Youtube.svg" alt=""title="YouTube">
+            <img src="./images/QQ.svg" alt=""title="QQ">
+            <li class="sanjiao"> <img src="./images/微信.svg" alt=""title="个人微信">
+            <div class="qq">
+                
+            </div></li>
+        </div> -->
+    </footer>
+
+</body>
+
+</html>
